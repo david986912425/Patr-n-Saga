@@ -15,22 +15,6 @@ export class CommunicationService {
     private baggageRepository: Repository<Baggage>,
   ) {}
 
-  async sendEventPattern(message: boolean) {
-    try {
-      await this.searchRoadConnection.connectClient();
-      return firstValueFrom(
-        this.searchRoadConnection
-          .getClient()
-          .emit(PATTERNS.EVENTS.RECEIVE_MESSAGE, {
-            message,
-          }),
-      );
-    } catch (error) {
-      console.error('No hay conexión', error);
-      return false;
-    }
-  }
-
   async addBaggage(reservationUuid: string, baggageDto: BaggageDto[]) {
     const createdBaggage = [];
     for (const item of baggageDto) {
@@ -41,6 +25,6 @@ export class CommunicationService {
     }
     const baggager = this.baggageRepository.create(createdBaggage);
     const result = await this.baggageRepository.save(baggager);
-    return this.sendEventPattern(result.length === baggageDto.length);
+    return result.length === baggageDto.length;
   }
 }

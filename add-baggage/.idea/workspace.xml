@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aae4c2df-b89d-4c02-ad3e-a27ec6b0a82b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/database.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/baggage.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/communication/Dto/baggage.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../register-passenger/src/entities/reservation.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/communication/communication.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/communication/communication.constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/communication/communication.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/communication/communication.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/communication/communication.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/communication/communication.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/communication/communication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/communication/communication.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/connection/BaggageManagementConnection.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/connection/SearchRoadConnection.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/connection/SearchRoadConnection.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/connection/connection.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/connection/connection.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../register-passenger/src/modules/communication/Dto/registerPassenger.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../register-passenger/src/modules/communication/Dto/registerPassenger.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../register-passenger/src/modules/communication/communication.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../register-passenger/src/modules/communication/communication.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../register-passenger/src/modules/communication/communication.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../register-passenger/src/modules/communication/communication.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../register-passenger/src/modules/communication/communication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../register-passenger/src/modules/communication/communication.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../register-passenger/src/modules/connection/seatReservationConnection.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../register-passenger/src/modules/connection/seatReservationConnection.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/mnt/Extra/home/david/github/nestMicroservicios/add-baggage/src",
+    "last_opened_file_path": "/mnt/Extra/home/david/github/nestMicroservicios/add-baggage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,7 +64,9 @@
       <updated>1711332136038</updated>
       <workItem from="1711332137040" duration="2691000" />
       <workItem from="1711376596263" duration="17000" />
-      <workItem from="1711429233181" duration="7290000" />
+      <workItem from="1711429233181" duration="7832000" />
+      <workItem from="1711462520153" duration="12000" />
+      <workItem from="1711481248874" duration="1541000" />
     </task>
     <servers />
   </component>

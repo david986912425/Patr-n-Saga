@@ -21,24 +21,26 @@ export class CommunicationService {
     private seatRepository: Repository<Seat>,
   ) {}
 
-  async sendEventPattern(uuid: string, baggage: []) {
+  async sendEventPattern(uuid: string, baggage: any[]) {
     try {
       await this.microServiceConnection.connectClient();
       return firstValueFrom(
         this.microServiceConnection
           .getClient()
-          .emit(PATTERNS.EVENTS.RECEIVE_MESSAGE, {
-            uuid,
-            baggage,
-          }),
+          .send(PATTERNS.MESSAGES.SEND_MESSAGE, { uuid, baggage }),
       );
     } catch (error) {
-      console.error('No hay conexión');
+      console.error('No hay conexión:', error);
       return false;
     }
   }
 
   async registerPassenger(data: RegisterPassengerDto) {
+    const queryRunner =
+      this.seatRepository.manager.connection.createQueryRunner();
+
+    await queryRunner.connect();
+    await queryRunner.startTransaction();
     try {
       const bus = await this.busRepository.findOne({
         where: {
@@ -52,11 +54,20 @@ export class CommunicationService {
       );
 
       if (!seat.is_busy) {
-        const reservation = await this.createReservation(data);
-        await this.updateSeatBusy(seat.uuid);
-        return await this.sendEventPattern(reservation.uuid, data.baggage);
+        const reservation = await this.createReservation(
+          data,
+          queryRunner.manager,
+        );
+        await this.updateSeatBusy(seat.uuid, queryRunner.manager);
+        if (await this.sendEventPattern(reservation.uuid, data.baggage)) {
+          await queryRunner.commitTransaction();
+          return reservation;
+        } else {
+          await queryRunner.rollbackTransaction();
+          return 'No se pudo pudo registrar';
+        }
       } else {
-        throw new Error('The seat is already occupied.');
+        return 'The seat is already occupied.';
       }
     } catch (error) {
       throw error;

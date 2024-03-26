@@ -1,7 +1,7 @@
 import { Controller } from '@nestjs/common';
 import { CommunicationService } from './communication.service';
 import { PATTERNS } from './communication.constants';
-import { EventPattern } from '@nestjs/microservices';
+import { MessagePattern } from '@nestjs/microservices';
 
 @Controller('api/v1/search-road')
 export class CommunicationController {
@@ -12,7 +12,7 @@ export class CommunicationController {
    * @param reservationUuid
    * @param baggage
    */
-  @EventPattern(PATTERNS.EVENTS.RECEIVE_MESSAGE)
+  @MessagePattern(PATTERNS.MESSAGES.SEND_MESSAGE)
   async receiveMessageFromEventB1(reservationUuid) {
     const { uuid, baggage } = reservationUuid;
     return await this.communicationService.addBaggage(uuid, baggage);
