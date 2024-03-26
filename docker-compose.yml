@@ -1,0 +1,46 @@
+version: "3.7"
+services:
+  registerpassenger:
+    build: ./register-passenger
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    volumes:
+      - ./register-passenger/.:/usr/src/app
+    container_name: register-passenger
+    networks:
+      - test-network
+  addbaggage:
+    build: ./add-baggage
+    volumes:
+      - ./add-baggage/.:/usr/src/app
+    container_name: add-baggage
+    depends_on:
+      - db
+    networks:
+      - test-network
+    # ports:
+    #   - "3001:3001"
+  db:
+    image: mysql:8.0
+    container_name: test-db
+    restart: unless-stopped
+    ports:
+      - ${SERVER_PORT_DB:-3306}:3306
+    volumes:
+      - dbtest:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=${DB_DATABASE:-test}
+      - MYSQL_USER=${DB_USERNAME:-test}
+      - MYSQL_PASSWORD=${DB_PASSWORD:-secret}
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD:-secret}
+    networks:
+      - test-network
+networks:
+  test-network:
+    driver: bridge
+volumes:
+  dbtest:
+  node1:
+  node2:

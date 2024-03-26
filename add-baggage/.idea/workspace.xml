@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aae4c2df-b89d-4c02-ad3e-a27ec6b0a82b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/database.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/baggage.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/communication/Dto/baggage.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../register-passenger/src/entities/reservation.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/communication/communication.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/communication/communication.constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/communication/communication.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/communication/communication.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/communication/communication.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/communication/communication.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/communication/communication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/communication/communication.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/connection/BaggageManagementConnection.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/connection/SearchRoadConnection.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/connection/SearchRoadConnection.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/connection/connection.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/connection/connection.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../register-passenger/src/modules/communication/Dto/registerPassenger.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../register-passenger/src/modules/communication/Dto/registerPassenger.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../register-passenger/src/modules/communication/communication.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../register-passenger/src/modules/communication/communication.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../register-passenger/src/modules/communication/communication.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../register-passenger/src/modules/communication/communication.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../register-passenger/src/modules/communication/communication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../register-passenger/src/modules/communication/communication.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../register-passenger/src/modules/connection/seatReservationConnection.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../register-passenger/src/modules/connection/seatReservationConnection.service.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2eA0aB2IruyCy9yV2BmbgbUFqh5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/mnt/Extra/home/david/github/nestMicroservicios/add-baggage/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/mnt/Extra/home/david/github/nestMicroservicios/add-baggage/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aae4c2df-b89d-4c02-ad3e-a27ec6b0a82b" name="Changes" comment="" />
+      <created>1711332136038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711332136038</updated>
+      <workItem from="1711332137040" duration="2691000" />
+      <workItem from="1711376596263" duration="17000" />
+      <workItem from="1711429233181" duration="7290000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
